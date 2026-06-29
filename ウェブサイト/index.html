@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <title>世界に触れる旅 </title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style-1.css" >
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+ <!--ナビゲーション-->
+<nav class="navbar" aria-label="メインナビゲーション">
+  <div class="nav-inner">
+    
+    <!-- 左：ロゴ -->
+    <div class="nav-left">
+      
+        <img src="images/logo.png" alt="MINO ロゴ" class="logo">
+      
+    </div>
+
+    <!-- 右：メニュー一覧 -->
+    <ul class="nav-list">
+      <li><a class="nav-pill" href="#top">トップ</a></li>
+
+      <li class="nav-item has-sub">
+        <a class="nav-pill" href="#japan">国内 ▾</a>
+        <ul class="sub">
+          <li><a href="pages/tokyo.html" target="_blank">東京</a></li>
+          <li><a href="pages/osaka.html" target="_blank">大阪</a></li>
+          <li><a href="pages/kyoto.html" target="_blank">京都</a></li>
+          <li><a href="pages/nagano.html" target="_blank">長野</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item has-sub">
+        <a class="nav-pill" href="#abroad">海外 ▾</a>
+        <ul class="sub">
+          <li><a href="pages/canada.html" target="_blank">カナダ</a></li>
+          <li><a href="pages/korea.html" target="_blank">韓国</a></li>
+        </ul>
+      </li>
+
+      <li><a class="nav-pill" href="#contact">お問い合わせ（休止中）</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!--  ヘッダー 動画の上に文字 -->
+  <header class="video-header" id="top">
+    <video id="timeVideo" autoplay muted loop playsinline></video>
+    <div class="header-inner">
+      <h1>非日常に飛び出そう</h1>
+        <p>〜 Adventure is Worthwhile 〜</p>
+    </div>
+  </header>
+
+  <main class="main-wrap">
+
+    <!-- 診断セクション -->
+    <section class="diagnosis" id="diagnosis">
+      <h2 class="section-title">✈ あなたの旅行タイプ診断 ✨</h2>
+
+      <form id="travelForm" class="diagnosis-form">
+        <!-- Q1 -->
+        <div class="q-block">
+          <p class="q-label">① 理想の旅先は国内 or 海外？</p>
+          <div class="options">
+            <label class="option warm">
+              <input type="radio" name="q1" value="domestic" required>
+              <span class="opt-title">国内</span><br>
+              <span class="opt-sub">日本国内へ</span>
+            </label>
+            <label class="option cool">
+              <input type="radio" name="q1" value="abroad">
+              <span class="opt-title">海外</span><br>
+              <span class="opt-sub">国外へ</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="q-block">
+          <p class="q-label">② どっちのほうが大事？グルメ or 景色？</p>
+          <div class="options">
+            <label class="option warm">
+              <input type="radio" name="q2" value="gourmet" required>
+              <span class="opt-title">グルメ</span><br>
+              <span class="opt-sub"> 食べ歩きや食文化を楽しみたい</span>
+            </label>
+            <label class="option cool">
+              <input type="radio" name="q2" value="view">
+              <span class="opt-title">景色</span><br>
+              <span class="opt-sub">絶景や自然を楽しみたい</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="q-block">
+          <p class="q-label">③ どっちを体験してみたい？ 伝統 or 流行？</p>
+          <div class="options">
+            <label class="option warm">
+              <input type="radio" name="q3" value="tradition" required>
+              <span class="opt-title">伝統</span><br>
+              <span class="opt-sub">歴史や文化に触れたい</span>
+            </label>
+            <label class="option cool">
+              <input type="radio" name="q3" value="trend">
+              <span class="opt-title">流行</span><br>
+              <span class="opt-sub">トレンドや最新体験が好き</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">結果を見る</button>
+        </div>
+      </form>
+
+      <div id="resultArea" class="result-area"></div>
+    </section>
+
+    <!--カード群で旅行先を軽く説明-->
+    <section class="destinations" id="destinations">
+      <h2 class="section-title">おすすめ旅行先</h2>
+
+      <div class="card-container" id="cards">
+        <!-- Osaka -->
+        <article class="card" data-place="osaka" id="card-osaka">
+          <img src="images/osaka.jpg" alt="大阪の写真">
+          <div class="card-body">
+            <h3>大阪</h3>
+            <p>グルメと活気とヒトに満ちた街。たこ焼き・お好み焼きなどの粉物グルメを楽しめます。</p>
+            <a class="btn" href="pages/osaka.html" target="_blank">詳しく見る</a>
+          </div>
+        </article>
+
+        <!-- 京都-->
+        <article class="card" data-place="kyoto" id="card-kyoto">
+          <img src="images/kyoto.jpg" alt="京都の写真">
+          <div class="card-body">
+            <h3>京都</h3>
+            <p>古都の風情と伝統文化。寺社巡りや季節の風情が魅力的でこれぞ日本という感じがします。</p>
+            <a class="btn" href="pages/kyoto.html" target="_blank">詳しく見る</a>
+          </div>
+        </article>
+
+        <!-- 東京 -->
+        <article class="card" data-place="tokyo" id="card-tokyo">
+          <img src="images/tokyo.jpg" alt="東京の写真">
+          <div class="card-body">
+            <h3>東京</h3>
+            <p>最先端の流行とカルチャーを体感。ショッピングや夜景も楽しめます。ライブや推しに会いたいならここ。</p>
+            <a class="btn" href="pages/tokyo.html" target="_blank">詳しく見る</a>
+          </div>
+        </article>
+
+        <!-- 長野　一番最初に作る -->
+        <article class="card" data-place="nagano" id="card-nagano">
+          <img src="images/nagano.jpg" alt="長野の写真">
+          <div class="card-body">
+            <h3>長野</h3>
+            <p>豊かな自然と落ち着いた温泉・山のアクティビティが楽しめます。雪質は軽めで関西から行くところではトップクラス</p>
+            <a class="btn" href="pages/nagano.html" target="_blank">詳しく見る</a>
+          </div>
+        </article>
+
+        <!-- フランス　時間があれば -->
+        <article class="card" data-place="france" id="card-france">
+          <img src="images/france.jpg" alt="フランスの写真">
+          <div class="card-body">
+            <h3>フランス</h3>
+            <p>芸術と美食の国。パリの街歩きやワイン、グルメ体験が魅力。オレンジジュースは生絞りです</p>
+            <a class="btn">準備中</a>
+          </div>
+        </article>
+
+        <!-- スパイン -->
+        <article class="card" data-place="spain" id="card-spain">
+          <img src="images/spain.jpg" alt="スペインの写真">
+          <div class="card-body">
+            <h3>スペイン</h3>
+            <p>情熱的な文化と美しい景観。建築・音楽・料理を楽しめます。サクラダファミリアはもうそろそろ完成です。</p>
+            <a class="btn">準備中</a>
+          </div>
+        </article>
+
+        <!-- カナダ -->
+        <article class="card" data-place="canada" id="card-canada">
+          <img src="images/canada.jpg" alt="カナダの写真">
+          <div class="card-body">
+            <h3>カナダ</h3>
+            <p>雄大な自然とアウトドア体験。景色を中心に楽しみたい方へ。何もかもがビックです。カリカリベーコンにはメープルシロップをかけます。</p>
+            <a class="btn" href="pages/canada.html" target="_blank">詳しく見る</a>
+          </div>
+        </article>
+
+        <!-- 韓国-->
+        <article class="card" data-place="korea" id="card-korea">
+          <img src="images/korea.jpg" alt="韓国の写真">
+          <div class="card-body">
+            <h3>韓国</h3>
+            <p>トレンドと伝統が混ざり合う都市。グルメとショッピングが好評。何でもかんでもニンニクと砂糖が入っています。ソウルはトイレが整備されてきました。</p>
+            <a class="btn" href="pages/korea.html" target="_blank">詳しく見る</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- アクティビティ -->
+    <section class="activities">
+      <h2 class="section-title">人気のアクティビティ</h2>
+      <div class="card-container">
+        <article class="card small">
+          <img src="images/activity1.jpg" alt="">
+          <div class="card-body">
+            <h4>食べ歩き</h4>
+            <p>おいしく楽しく食文化を体験</p>
+          </div>
+        </article>
+        <article class="card small">
+          <img src="images/yuki.jpg" alt="">
+          <div class="card-body">
+            <h4>雪遊び</h4>
+            <p>都会では体験できない銀世界ではっちゃけよう</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- おすすめの場所ランキング -->
+    <section class="ranking">
+      <h2 class="section-title">個人的おすすめランキング</h2>
+      <ol class="ranking-list">
+        <li><span class="badge gold">1</span> 　　　　　　長野 — 最高の雪質でスノーボード</li>
+        <li><span class="badge silver">2</span> 　　　　　　フランス — おいしいし建物はファンタステック</li>
+        <li><span class="badge bronze">3</span> 　　　　　　大阪 — ごちゃごちゃしてます</li>
+      </ol>
+    </section>
+
+    <!-- お問い合わせ 形だけです-->
+    <section id="contact" class="contact">
+      <h2 class="section-title">お問い合わせ （現在お問い合わせは受け付けておりません）</h2>
+      <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="alert('このデモでは送信処理は行われません')">
+        <input name="name" type="text" placeholder="お名前" required>
+        <input name="email" type="email" placeholder="メールアドレス" required>
+        <textarea name="message" placeholder="お問い合わせ内容" rows="5" required></textarea>
+        <button class="btn-primary" type="submit">送信する</button>
+      </form>
+    </section>
+
+  </main>
+
+ <footer class="footer">
+  <div class="footer-overlay">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h2>大阪公立大学</h2>
+        <p>現代システム科学域　知識情報システム学類</p>
+        <p>坂本 実理</p>
+        <p>メール: <a href="mailto:sakamoto@example.com">se24754q@st.omu.ac.jp</a></p>
+        <p> このウェブサイトで使われている写真や背景は、すべてフリー素材または本人が撮影したもので著作権上の問題はありません。</p>
+        
+      </div>
+      
+      <div class="footer-map">
+        <h3>アクセス（大阪公立大学中百舌鳥キャンパス）</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41648.8381644744!2d135.5681801344303!3d34.56200073398409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dbca41eb5079%3A0xae8d3eaf93d935fb!2z5aSn6Ziq5YWs56uL5aSn5a2mIOS4reeZvuiIjOmzpeOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1762589534772!5m2!1sja!2sjp"
+          
+          width="300"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+    <p> 〒599-8531 大阪府堺市中区学園町１番１号</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

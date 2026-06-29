@@ -1,0 +1,42 @@
+参考資料
+アコーディオンメニュー
+
+Tamura Hiroto(2024)「HTMLでアコーディオンを作る！サンプルコードやメリットを解説 」https://www.sejuku.net/blog/226236
+
+ビデオヘッダー
+
+Web Design Leaves(2023)「HTML video タグで動画埋め込み（背景動画）」
+https://www.webdesignleaves.com/pr/html/html-video-tag.html
+
+時間帯によって表示する動画を変える
+
+Coding Life style(2025)「【JavaScript】特定の時間帯だけ表示・非表示を切り替える処理の書き方」https://codingls.com/js/4146/
+
+診断フォーム
+
+WATASHI.xyz(2025)「JavaScript診断テストの作り方：コピペで複雑な性格診断・得点ロジックを実装！応用まで完全解説」https://watashi.xyz/js-diagnostic-test/
+
+画像の切り抜きや形を整える
+
+GRAY CODE(2018)「画像を角丸にしたり、円形に切り抜く」https://gray-code.com/html_css/crop-image-in-round-corners-or-raound-shapes/
+
+ボタンを選択した状態にする
+
+MEMORVA(2025)「select、option要素をJavaScriptで選択した状態にする」
+https://memorva.jp/memo/javascript/js_option_selected.php
+
+ボタンを押したときに浮きあ上がらせるホバー処理
+
+侍テック編集部（2025）「CSSの擬似クラス「:hover」の使い方｜簡単にボタンを作ろう」https://www.sejuku.net/blog/75112
+
+お問い合わせを押すとそこまでページをジャンプさせる
+
+TechAcademy マガジン（2017）「特定の場所に移動したい！HTMLでジャンプする方法【初心者向け】」https://magazine.techacademy.jp/magazine/9825
+
+サイドバーの作り方
+
+ウェブカツブログ（2021）「【HTML】サイドバーを使って見やすいレイアウトを作ろう」https://webukatu.com/wordpress/blog/27994/
+
+目次の作り方
+
+WP-LOAD(2021)「HTMLで目次をつくる方法(目次のデザインの例3選も解説)」https://wp-load.in/html-css/html-table-of-contents
